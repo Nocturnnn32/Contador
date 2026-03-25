@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Contador</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+<h2>Contador de Participación</h2>
+
+<input type="text" id="nombre" placeholder="Nombre">
+<button onclick="agregar()">Agregar</button>
+
+<div class="resultados">
+    <div id="lista"></div>
+
+    <button class="export" onclick="generarPDF()">📄 PDF</button>
+    <button class="export" onclick="generarExcel()">📊 Excel</button>
+    <button onclick="limpiar()">🗑 Limpiar</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
